@@ -42,6 +42,14 @@ They're following the pattern below:
 Some commands don't take any arguments. In those cases you'd only have to pass
 in the client.
 
+### `redka/close`
+
+Closes the underlying connection stream.
+
+```janet
+(redka/close client)
+```
+
 ## Examples
 
 Usage examples can be found in the `example` folder. It also contains a

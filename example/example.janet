@@ -3,6 +3,7 @@
 (def client (redka/make-client))
 (pp (redka/ping client))
 (pp (redka/echo client 500))
+(pp (redka/close client))
 
 (with [c (redka/make-client)]
   (pp (redka/sadd c :set1 1 2))
